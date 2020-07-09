@@ -78,3 +78,16 @@ class Button:
                 return True
             
         return False
+    
+    def handle_click(self, callback, params=None):
+        """
+        Calls a callback function if the button is clicked
+
+        Parameters:
+            callback (function): The function to call.
+            params (tuple): The parameters to the callback.
+
+        """
+        
+        if self.is_over(pygame.mouse.get_pos()):
+            callback()
