@@ -33,8 +33,8 @@ PAUSE = Button(colors.BLUE, colors.DARK_BLUE, 25, HEIGHT - TOOLBAR_HEIGHT + 7, 9
 STOP = Button(colors.BLUE, colors.DARK_BLUE, 130, HEIGHT - TOOLBAR_HEIGHT + 7, 70, TOOLBAR_HEIGHT - 14, 'Stop')
 PLAY = Button(colors.BLUE, colors.DARK_BLUE, 25, HEIGHT - TOOLBAR_HEIGHT + 7, 70, TOOLBAR_HEIGHT - 14, 'Play')
 
-SORT_SELECT_LABEL = Label(colors.BLUE, 895, HEIGHT - TOOLBAR_HEIGHT + 15, 70, 20, 'Algorithm:')
-SORT_SELECTION = DropMenu(colors.DARK_BLUE, colors.BLUE, 975, HEIGHT - TOOLBAR_HEIGHT + 7, 200, TOOLBAR_HEIGHT - 14, ['Bubble Sort', 'Insertion Sort', 'Selection Sort'])
+SORT_SELECT_LABEL = Label(colors.BLUE, 875, HEIGHT - TOOLBAR_HEIGHT + 15, 80, 20, 'Algorithm:')
+SORT_SELECTION = DropMenu(colors.DARK_BLUE, colors.BLUE, 965, HEIGHT - TOOLBAR_HEIGHT + 7, 240, TOOLBAR_HEIGHT - 14, ['Bubble Sort', 'Insertion Sort', 'Selection Sort'])
 
 BUTTONS = (PAUSE, STOP, PLAY)
 LABELS = (DELAY_LABEL, LENGTH_LABEL)

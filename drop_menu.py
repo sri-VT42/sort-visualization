@@ -61,11 +61,18 @@ class DropMenu:
         else:
             pygame.draw.rect(win, self.color_h, (self.x,self.y,self.width,self.height), 0)
         
+        
+        
         # Draw the current state onto the main box.
         if self.current_state != '':
             font = colors.FONT()
             text = font.render(self.current_state, 1, colors.WHITE)
-            win.blit(text, (self.x + (self.width/2 - text.get_width()/2), self.y + (self.height/2 - text.get_height()/2) + 2))
+            win.blit(text, (self.x + (self.width/2 - text.get_width()/2) - 15, self.y + (self.height/2 - text.get_height()/2) + 2))
+            coord_1 = (self.x + (self.width - 21), self.y + 5 * self.height / 8)
+            coord_2 = (self.x + (self.width - 16), self.y + 3 * self.height / 8)
+            coord_3 = (self.x + (self.width - 11), self.y + 5 * self.height / 8)
+            pygame.draw.polygon(win, colors.WHITE, (coord_1, coord_2, coord_3))
+            pygame.draw.line(win, colors.WHITE, (self.x + (self.width - 30), self.y + 5), (self.x + (self.width - 30), self.y + self.height - 5), 2)
         
         # If the DropMenu is active, then draw the rest of the options to the screen.
         if self.clicked:
